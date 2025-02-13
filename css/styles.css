@@ -14,6 +14,7 @@
   background: #ccc;
   height: 300px;
   width: 600px;
+  position: relative;
 }
 
 #heart1 {
@@ -22,4 +23,40 @@
 
 #heart2 {
   fill: green;
+}
+
+#terrain{
+  height:300px;
+  width:600px;
+  position:absolute;
+  top:230px;
+}
+
+#treeone{
+  position:absolute;
+  top:110px;
+  left:200px
+}
+
+#treetwo{
+  position:absolute;
+  top:110px;
+  left:300px
+}
+
+#flowers{
+  position:absolute;
+  top:110px;
+}
+
+#spikes{
+  position:absolute;
+  top:150px;
+  left:120px;
+}
+
+#hooptrack{
+  position:absolute;
+  top:110px;
+  left:400px;
 }
