@@ -60,3 +60,9 @@
   top:110px;
   left:400px;
 }
+
+.googleLetter {
+  font-size: 60px;
+  font-family: Arial, sans-serif;
+  fill: #Ffd700;
+}
