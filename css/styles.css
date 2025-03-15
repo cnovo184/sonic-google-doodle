@@ -5,24 +5,12 @@
   * Outline Elements
 */
 
-* {
-    outline: 1px dotted black;
-}
-
-/* Doodle Stage */
+/* Stage */
 #stage {
-  background: #ccc;
+  background: linear-gradient(to bottom, #87CEEB, #1E90FF); /* Light to deep blue */
   height: 300px;
   width: 600px;
-  position: relative;
-}
-
-#heart1 {
-  fill: red;
-}
-
-#heart2 {
-  fill: green;
+  position:relative;
 }
 
 #terrain{
@@ -57,12 +45,37 @@
 
 #hooptrack{
   position:absolute;
-  top:110px;
-  left:400px;
+  top:28px;
+  left:390px;
+}
+
+#pixel-sonic{
+  position:absolute;
+  top:175px;
+  left:290px;
+  cursor:pointer;
+  transition: transform 0.3s ease-out;
+}
+
+#pixel-sonic.jump {
+  animation: jump 0.6s ease-out;
+}
+
+@keyframes jump {
+  0% { transform: translateY(0); }
+  40% { transform: translateY(-80px); } /* Sonic jumps up */
+  100% { transform: translateY(0); } /* Lands back */
+}
+
+#cloud{
+  position:absolute;
+  top:70px;
+  left:40px;
+  opacity:80%;
 }
 
 .googleLetter {
   font-size: 60px;
   font-family: Arial, sans-serif;
-  fill: #Ffd700;
+  fill: #Ffd700; /* Change the color as needed */
 }
